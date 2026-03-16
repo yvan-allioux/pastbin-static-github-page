@@ -176,7 +176,8 @@ textarea {
   align-items: flex-end;
 }
 
-.controls-top .field { flex: 1; min-width: 200px; }
+.controls-top .field     { flex: 1; min-width: 200px; }
+.controls-top .field-key { flex: 2; }
 
 .actions {
   display: flex;
@@ -232,6 +233,12 @@ textarea {
   color: var(--muted);
 }
 
+.paste-title { font-size: 1rem; }
+
+.modal-actions { display: flex; gap: 0.5rem; }
+
+.btn-full { flex: 1; }
+
 .paste-content {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -260,6 +267,8 @@ textarea {
 .notice-info  { background: rgba(88, 166, 255, 0.08); border: 1px solid rgba(88, 166, 255, 0.2); color: var(--accent); }
 .notice-error { background: rgba(248, 81, 73, 0.08);  border: 1px solid rgba(248, 81, 73, 0.2);  color: var(--error); }
 .notice-warn  { background: rgba(210, 153, 34, 0.08); border: 1px solid rgba(210, 153, 34, 0.2); color: var(--warning); }
+
+.notice-icon { flex-shrink: 0; margin-top: 1px; }
 
 /* ── MISC ── */
 

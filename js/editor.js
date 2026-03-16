@@ -33,6 +33,16 @@ btnEncrypt.addEventListener("click", async () => {
   }
 });
 
+// ── Alerte clé courte (live) ──────────────────────────────────────────────
+
+pasteKey.addEventListener("input", () => {
+  if (pasteKey.value.length > 0 && pasteKey.value.length < 8) {
+    showWarning(keyWarn);
+  } else {
+    hideWarning(keyWarn);
+  }
+});
+
 // ── Copie de l'URL ────────────────────────────────────────────────────────
 
 btnCopy.addEventListener("click", () => {
